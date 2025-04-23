@@ -4,6 +4,11 @@
     background-color: #464646;
 }
 
+.y-bg {
+    width: 260px;
+    height: 80px;
+    background-color: #F9BC01;
+}
 
 .y-line {
     width: 5px;
@@ -17,3 +22,6 @@
     background-color: #F9BC01;
 }
 
+.bg {
+    background-color: #EEEEEE;
+}
