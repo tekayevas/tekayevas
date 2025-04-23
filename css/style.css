@@ -1,0 +1,19 @@
+.black-line {
+    width: 130px;
+    height: 5px;
+    background-color: #464646;
+}
+
+
+.y-line {
+    width: 5px;
+    height: 180px;
+    background-color: #F9BC01;
+}
+
+.y-line2 {
+    width: 5px;
+    height: 220px;
+    background-color: #F9BC01;
+}
+
