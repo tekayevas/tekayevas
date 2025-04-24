@@ -29,7 +29,7 @@
                         <div>GOOD FOOD</div>
                         <div>GOOD MOOD</div>
                     </div>
-                    <div class="bg-md-warning position-absolute top-50 start-0 translate-middle py-4 pe-5  z-n1"
+                    <div class="bg-warning position-absolute top-50 start-0 translate-middle py-4 pe-5 z-n1 d-none d-md-block"
                         style="left: 132px!important; padding-left: 210px;">
                         <span class="invisible">
                             test
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-5 col-lg-4  mt-2 mt-md-0 mb-md-3 " style="padding-right: 0px;">
+            <div class="col-12 col-md-5 col-lg-4  mt-2 mt-md-0 mb-md-3 " style="padding-right: 0px;" data-aos="fade-up">
                 <img src="img/01.png" alt="" class="w-100 w-md-100 mb-1 mb-md-5 object-fit-lg-contain">
             </div>
         </div>
@@ -134,8 +134,8 @@
             </div>
         </div>
     </div>
-    <div class="container-xl d-block d-md-none">
-        <section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="container-xl d-block d-md-none mb-5 mb-md-0 mt-3 mt-md-0">
+        <section class="splide splider1" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
@@ -172,7 +172,7 @@
 
     <div class="container-xl mt-5 d-none d-md-block">
         <div class="row">
-            <div class="col-4 text-center align-items-center justify-content-center">
+            <div class="col-4 text-center align-items-center justify-content-center justify-content-center">
                 <i class="bi-broadcast-pin text-warning display-5"></i>
                 <div class="h4 fw-bold mt-3">Meat</div>
                 <div class="px-4 fw-medium">Sample text. Lorem ipsum dolor sit amet consectetur adipisicing.</div>
@@ -205,20 +205,58 @@
             </div>
         </div>
     </div>
-    <div class="container-xl d-block d-md-none">
-        <section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="container-xl d-block d-md-none mb-5 mb-md-0 ">
+        <section class="splide splider2" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><i class="bi-broadcast-pin text-warning display-5"></i>
-                        <div class="h4 fw-bold mt-3">Meat</div>
-                        <div class="px-4 fw-medium">Sample text. Lorem ipsum dolor sit amet consectetur adipisicing.
+                    <li class="splide__slide">
+                        <div class="col-12 col-lg-4  text-center align-items-center">
+                            <i class="bi-broadcast-pin text-warning display-5"></i>
+                            <div class="h4 fw-bold mt-3">Meat</div>
+                            <div class="px-4 fw-medium">Sample text. Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
                         </div>
                     </li>
-                    <li class="splide__slide">Slide 02</li>
-                    <li class="splide__slide">Slide 03</li>
-                    <li class="splide__slide">Slide 03</li>
-                    <li class="splide__slide">Slide 03</li>
-                    <li class="splide__slide">Slide 03</li>
+                    <li class="splide__slide">
+                        <div class="col-12 col-lg-4 text-center align-items-center justify-content-center">
+                            <i class="bi-calendar-day text-warning display-5"></i>
+                            <div class="h4 fw-bold mt-3">Fish</div>
+                            <div class="px-4 fw-medium">Sample text. Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="col-12 col-lg-4 text-center align-items-center justify-content-center">
+                            <i class="bi-calendar-day text-warning display-5"></i>
+                            <div class="h4 fw-bold mt-3">Vegetables</div>
+                            <div class="px-4 fw-medium">Sample text. Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="col-12 col-lg-4 text-center align-items-center justify-content-center">
+                            <i class="bi-calendar-day text-warning display-5"></i>
+                            <div class="h4 fw-bold mt-3">Fruits</div>
+                            <div class="px-4 fw-medium">Sample text. Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="col-12 col-lg-4 text-center align-items-center justify-content-center">
+                            <i class="bi-calendar-day text-warning display-5"></i>
+                            <div class="h4 fw-bold mt-3">Sweets</div>
+                            <div class="px-4 fw-medium">Sample text. Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="col-12 col-lg-4 text-center align-items-center justify-content-center">
+                        <i class="bi-calendar-day text-warning display-5"></i>
+                        <div class="h4 fw-bold mt-3">Juice</div>
+                        <div class="px-4 fw-medium">Sample text. Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </div>
+                    </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -229,12 +267,38 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/splide.min.js"></script>
     <script>
-        var splide = new Splide('.splide');
-        type   : 'loop',
-        autoScroll : {
-            speed : 2,
-        },
-        
+        AOS.init({
+            duration: 1500,
+            once: true,
+        })
+    </script>
+    <script>
+        var splide = new Splide('.splider1', {
+            type: "loop",
+            autoplay: true,
+            interval: 2000,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            arrows: false,
+            pagination: false,
+        });
+        splide.mount();
+        // autoScroll : {
+        //     speed : 2,
+        // },
+
+    </script>
+    <script>
+        var splide = new Splide('.splider2', {
+            type: "loop",
+            autoplay: true,
+            interval: 1300,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            arrows: false,
+            pagination: false,
+        });
+        splide.mount();
     </script>
 
 </body>
